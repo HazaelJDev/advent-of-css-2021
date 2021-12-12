@@ -20,7 +20,7 @@ const FooterS = styled.footer`
 const Text = styled.h6`
   width: 100%;
   height: fit-content;
-  /* Subtitle 1 */
+
   font-family: var(--body);
   font-style: normal;
   font-weight: bold;

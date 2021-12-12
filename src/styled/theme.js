@@ -20,6 +20,12 @@ export const lightTheme = {
   contactUser: app.secondary500,
   message404: app.secondary500,
 
+  rightMoon404: 410,
+  topMoon404: 356,
+
+  rightMoon: 410,
+  topMoon: -356.15,
+
   ...media
 };
 
@@ -37,10 +43,16 @@ export const darkTheme = {
   buttonsScrollBar: app.primary400,
 
   iconMode: shades.black,
-  navLinkOut: app.primary400,
+  navLinkOut: app.secondary400,
 
   contactUser: app.secondary400,
   message404: app.secondary400,
+
+  rightMoon404: 0,
+  topMoon404: 200,
+
+  rightMoon: -20,
+  topMoon: -80,
 
   ...media
 };

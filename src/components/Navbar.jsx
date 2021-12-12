@@ -11,7 +11,7 @@ const NavS = styled.nav`
   height: 80px;
   padding: 0px 40px;
 
-  background-color: rgba(229, 228, 225, 0.7);
+  background-color: rgba(229, 228, 225, 0.4);
   backdrop-filter: blur(40px);
 
   display: flex;

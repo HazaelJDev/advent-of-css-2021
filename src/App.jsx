@@ -13,6 +13,7 @@ import {
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 //Theme and Global Style
 import { createGlobalStyle, ThemeProvider } from "styled-components";
@@ -68,6 +69,12 @@ const GlobalStyle = createGlobalStyle`
     overflow-y: auto;
     padding: 0;
     margin: 0;
+    transition: all 1.5s ease-out;
+  }
+
+  h1,h2, h3, h4, h5, h6 {
+    margin:0;
+    padding: 0;
   }
   
   #root > section, footer, nav, main, aside{
@@ -145,6 +152,7 @@ export default function App() {
 
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
