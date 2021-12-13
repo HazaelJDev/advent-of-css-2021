@@ -82,8 +82,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *{
-    scrollbar-color: ${({ theme }) => theme.trackScrollBar} ${({ theme }) =>
-  theme.ThumbScrollBar};
+    scrollbar-color: ${({ theme }) => theme.ThumbScrollBar} ${({ theme }) =>
+  theme.trackScrollBar};
     scrollbar-width: 15px;
   }
 
@@ -118,6 +118,7 @@ const GlobalStyle = createGlobalStyle`
 
   .App{
     max-width: 100%;
+    overflow-x: hidden;
   }
 `;
 

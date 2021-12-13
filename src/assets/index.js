@@ -9,6 +9,7 @@ import { ReactComponent as Mail } from "./icons/mail.svg";
 import { ReactComponent as Share } from "./icons/share.svg";
 import { ReactComponent as World } from "./icons/world.svg";
 import { ReactComponent as Link } from "./icons/link.svg";
+import { ReactComponent as ArrowDown } from "./icons/arrow_down.svg";
 import { ReactComponent as Facebook } from "./icons/facebook.svg";
 import { ReactComponent as Twitter } from "./icons/twitter.svg";
 import { ReactComponent as YouTube } from "./icons/youtube.svg";
@@ -48,6 +49,7 @@ export const IconsCristmas = {
 };
 
 export const Icons = {
+  ArrowDown,
   Close,
   CloseCircle,
   DarkMode,

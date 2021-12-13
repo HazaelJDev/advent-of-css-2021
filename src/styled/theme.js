@@ -21,10 +21,17 @@ export const lightTheme = {
   message404: app.secondary500,
 
   rightMoon404: 410,
-  topMoon404: 356,
+  topMoon404: -356,
+  rightMobileMoon404: 132,
+  topMobileMoon404: -159,
 
   rightMoon: 410,
-  topMoon: -356.15,
+  topMoon: -356,
+  rightMobileMoon: 132,
+  topMobileMoon: -159,
+
+  strokeHeroTitle: 0,
+  bgCalendarMatrix: app.tertiary500,
 
   ...media
 };
@@ -49,10 +56,17 @@ export const darkTheme = {
   message404: app.secondary400,
 
   rightMoon404: 0,
-  topMoon404: 200,
+  topMoon404: -200,
+  rightMobileMoon404: 0,
+  topMobileMoon404: -40,
 
-  rightMoon: -20,
-  topMoon: -80,
+  rightMoon: 0,
+  topMoon: 20,
+  rightMobileMoon: 0,
+  topMobileMoon: 0,
+
+  strokeHeroTitle: 3,
+  bgCalendarMatrix: app.tertiary400,
 
   ...media
 };
