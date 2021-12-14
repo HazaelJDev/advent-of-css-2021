@@ -17,6 +17,7 @@ import { ReactComponent as Instagram } from "./icons/instagram.svg";
 import { ReactComponent as Snapchat } from "./icons/snapchat.svg";
 import Logo from "./img/logo.png";
 import HeroBg from "./img/bgHero.png";
+import HeroBgMobile from "./img/bgHeroMobile.png";
 import Snowman from "./img/snowman404.png";
 
 const SocialMedia = {
@@ -30,10 +31,11 @@ const SocialMedia = {
 export const Img = {
   Logo,
   HeroBg,
+  HeroBgMobile,
   Snowman
 };
 
-export const IconsCristmas = {
+export const IconsChristmas = {
   bauble: "https://i.postimg.cc/nh8kJ4TG/bauble.png",
   candle: "https://i.postimg.cc/8zhbP70Q/candle.png",
   deer: "https://i.postimg.cc/pdRJ9Pw9/deer.png",
@@ -47,6 +49,21 @@ export const IconsCristmas = {
   tree: "https://i.postimg.cc/j5qc1RvV/tree.png",
   wreath: "https://i.postimg.cc/J4Hqv63h/wreath.png"
 };
+
+export const IconsC = [
+  "https://i.postimg.cc/nh8kJ4TG/bauble.png",
+  "https://i.postimg.cc/8zhbP70Q/candle.png",
+  "https://i.postimg.cc/pdRJ9Pw9/deer.png",
+  "https://i.postimg.cc/RZfg6sqY/gift.png",
+  "https://i.postimg.cc/43gBz69x/gingerbread.png",
+  "https://i.postimg.cc/C1v7T96R/mistletoe.png",
+  "https://i.postimg.cc/mryVVPYN/mitten.png",
+  "https://i.postimg.cc/WpH89LkK/sleigh.png",
+  "https://i.postimg.cc/rsKJ8gvQ/snowman.png",
+  "https://i.postimg.cc/J0vQtZ8m/sock.png",
+  "https://i.postimg.cc/j5qc1RvV/tree.png",
+  "https://i.postimg.cc/J4Hqv63h/wreath.png"
+];
 
 export const Icons = {
   ArrowDown,

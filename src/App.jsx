@@ -8,7 +8,23 @@ import {
   Five,
   Six,
   Seven,
-  Eight
+  Eight,
+  Nine,
+  Ten,
+  Eleven,
+  Twelve,
+  Thirteen,
+  Fourteen,
+  Fifteen,
+  Sixteen,
+  Seventeen,
+  Eighteen,
+  Nineteen,
+  Twenty,
+  TwentyOne,
+  TwentyTwo,
+  TwentyThree,
+  TwentyFour
 } from "./pages/days/index";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -150,6 +166,22 @@ export default function App() {
         <Route path="/day/six" element={<Six />} />
         <Route path="/day/seven" element={<Seven />} />
         <Route path="/day/eight" element={<Eight />} />
+        <Route path="/day/nine" element={<Nine />} />
+        <Route path="/day/ten" element={<Ten />} />
+        <Route path="/day/eleven" element={<Eleven />} />
+        <Route path="/day/twelve" element={<Twelve />} />
+        <Route path="/day/thirteen" element={<Thirteen />} />
+        <Route path="/day/fourteen" element={<Fourteen />} />
+        <Route path="/day/fifteen" element={<Fifteen />} />
+        <Route path="/day/sixteen" element={<Sixteen />} />
+        <Route path="/day/seventeen" element={<Seventeen />} />
+        <Route path="/day/eighteen" element={<Eighteen />} />
+        <Route path="/day/nineteen" element={<Nineteen />} />
+        <Route path="/day/twenty" element={<Twenty />} />
+        <Route path="/day/twenty-one" element={<TwentyOne />} />
+        <Route path="/day/twenty-two" element={<TwentyTwo />} />
+        <Route path="/day/twenty-three" element={<TwentyThree />} />
+        <Route path="/day/twenty-four" element={<TwentyFour />} />
 
         <Route path="/*" element={<NotFound />} />
       </Routes>

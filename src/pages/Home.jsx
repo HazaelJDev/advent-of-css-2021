@@ -1,6 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Icons, Img } from "../assets/index";
+import { Icons, Img, IconsC } from "../assets/index";
+import { getIcons, days } from "../utils/routes-days";
+import { Link } from "react-router-dom";
 
 const HomeLayout = styled.main`
   max-width: 100%;
@@ -9,6 +11,7 @@ const HomeLayout = styled.main`
 `;
 
 const Hero = styled.section`
+  position: relative;
   max-width: 100%;
   max-height: calc(100vh - 80px);
   height: calc(100vh - 80px);
@@ -47,6 +50,12 @@ const TitleHero = styled.h1`
   -moz-text-stroke: ${({ theme }) => theme.strokeHeroTitle}px #fffefa;
 
   color: ${({ theme }) => theme.message404};
+
+  ${({ theme }) => theme.mobile`
+    width: 80%;
+    font-size: 48px;
+    line-height: 55px;
+  `};
 `;
 
 const BodyHero = styled.h5`
@@ -62,6 +71,13 @@ const BodyHero = styled.h5`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.bodyText};
+
+  ${({ theme }) => theme.mobile`
+    width: 70%;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  `};
 `;
 
 const Up_down = keyframes`
@@ -95,18 +111,33 @@ const TextIndicator = styled.h6`
   font-size: 1.125rem;
   line-height: 22px;
   color: ${({ theme }) => theme.message404};
+
+  ${({ theme }) => theme.mobile`
+    width: 80%;
+    text-align: center;
+  `};
 `;
 
 const Calendar = styled.section`
   max-width: 100%;
-  max-height: calc(100vh - 80px);
-  padding: 80px 80px 0px;
+  height: fit-content;
+  padding: 80px 80px;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   grid-template-rows: 65px auto;
+
+  ${({ theme }) => theme.mobile`
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  `};
 `;
 
 const TilteCalendar = styled.h2`
@@ -131,9 +162,12 @@ const TilteCalendar = styled.h2`
   transform: rotate(1deg);
 
   ${({ theme }) => theme.mobile`
+    width: 90%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
     font-size: 1.375rem;
     line-height: 25px;
-    height :fit-content;
+    height: fit-content;
   `};
 `;
 
@@ -142,10 +176,50 @@ const CalendarMatrix = styled.section`
   grid-column-start: 1;
   grid-column-end: 13;
 
-  width: 100%;
-  height: 100%;
-
   background: ${({ theme }) => theme.bgCalendarMatrix};
+  width: 100%;
+  height: fit-content;
+  padding: 40px 0px 28px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: space-between;
+  align-content: space-between;
+
+  ${({ theme }) => theme.mobile`
+      grid-template-columns: repeat(1, 100%);
+  `};
+`;
+
+const CardDay = styled(Link)`
+  width: 100%;
+  height: fit-content;
+  background: ${({ theme }) => theme.bodyBackground};
+  color: ${({ theme }) => theme.bodyText};
+  padding: 8px 16px;
+  border: 4px solid ${({ theme }) => theme.borderCardDay};
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & > h3 {
+    font-family: var(--title);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 74px;
+  }
+
+  & > img {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const Moon = styled.div`
@@ -169,19 +243,27 @@ const Moon = styled.div`
   `};
 `;
 
-const ImgBg = styled.img`
+const ImgBg = styled.section`
+  background: url(${Img.HeroBg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   position: absolute;
   left: 0px;
-  top: 0px;
   z-index: 2;
+  ${({ theme }) => theme.mobile`
+    min-height: 120vh;
+    background: url(${Img.HeroBgMobile});
+  `};
 `;
 
 export default Home = () => {
+  const iconsChristmas = getIcons(IconsC);
   return (
     <HomeLayout>
-      <ImgBg src={Img.HeroBg} alt="Background Image" />
+      <ImgBg />
       <Moon />
       <Hero>
         <TitleHero>24 CSS Challenges for the Season</TitleHero>
@@ -197,7 +279,16 @@ export default Home = () => {
       </Hero>
       <Calendar>
         <TilteCalendar>Challenges calendar</TilteCalendar>
-        <CalendarMatrix>hola</CalendarMatrix>
+        <CalendarMatrix>
+          {days.map((day, index) => {
+            return (
+              <CardDay to={`/day/${day}`} key={`CarDay-${index + 1}`}>
+                <img src={iconsChristmas[index]} alt={`Day ${index + 1}`} />
+                <h3>{index + 1}</h3>
+              </CardDay>
+            );
+          })}
+        </CalendarMatrix>
       </Calendar>
     </HomeLayout>
   );

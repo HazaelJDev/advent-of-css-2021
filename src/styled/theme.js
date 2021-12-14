@@ -32,6 +32,7 @@ export const lightTheme = {
 
   strokeHeroTitle: 0,
   bgCalendarMatrix: app.tertiary500,
+  borderCardDay: app.borderTertiary500,
 
   ...media
 };
@@ -67,6 +68,7 @@ export const darkTheme = {
 
   strokeHeroTitle: 3,
   bgCalendarMatrix: app.tertiary400,
+  borderCardDay: app.borderTertiary400,
 
   ...media
 };
