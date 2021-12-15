@@ -15,10 +15,6 @@ import { ReactComponent as Twitter } from "./icons/twitter.svg";
 import { ReactComponent as YouTube } from "./icons/youtube.svg";
 import { ReactComponent as Instagram } from "./icons/instagram.svg";
 import { ReactComponent as Snapchat } from "./icons/snapchat.svg";
-import Logo from "./img/logo.png";
-import HeroBg from "./img/bgHero.png";
-import HeroBgMobile from "./img/bgHeroMobile.png";
-import Snowman from "./img/snowman404.png";
 
 const SocialMedia = {
   Facebook,
@@ -29,10 +25,10 @@ const SocialMedia = {
 };
 
 export const Img = {
-  Logo,
-  HeroBg,
-  HeroBgMobile,
-  Snowman
+  Logo: "https://i.postimg.cc/q7Hcw7TJ/logo.png",
+  HeroBg: "https://i.postimg.cc/sXVYF0xb/bgHero.png",
+  HeroBgMobile: "https://i.postimg.cc/XvKfz0jw/bg-Hero-Mobile.png",
+  Snowman: "https://i.postimg.cc/T3DqnDBN/snowman404.png"
 };
 
 export const IconsChristmas = {
