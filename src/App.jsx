@@ -37,8 +37,6 @@ import { useDarkMode } from "./hooks/useDarkMode";
 import { lightTheme, darkTheme } from "./styled/theme";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-  
   @font-face {
     font-family: StrangeTales;
     src: url('/assets/StrangeTales.ttf'),

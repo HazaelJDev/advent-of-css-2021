@@ -1,9 +1,11 @@
 import React from "react";
 
-export default Eighteen = () => {
+const Eighteen = () => {
   return (
     <div>
       <h1>Eighteen</h1>
     </div>
   );
 };
+
+export default Eighteen;

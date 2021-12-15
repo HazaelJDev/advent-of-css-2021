@@ -1,9 +1,11 @@
 import React from "react";
 
-export default Ten = () => {
+const Ten = () => {
   return (
     <div>
       <h1>Ten</h1>
     </div>
   );
 };
+
+export default Ten;

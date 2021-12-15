@@ -1,9 +1,11 @@
 import React from "react";
 
-export default TwentyOne = () => {
+const TwentyOne = () => {
   return (
     <div>
       <h1>TwentyOne</h1>
     </div>
   );
 };
+
+export default TwentyOne;
