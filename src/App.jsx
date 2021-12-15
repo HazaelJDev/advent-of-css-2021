@@ -136,8 +136,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default function App() {
-  const [theme, toggleTheme, componentMounted] = useDarkMode();
+const App = () => {
+  const [theme, toggleTheme] = useDarkMode();
   const [menu, setMenu] = useState("menu");
 
   const handleMenu = () => setMenu(menu === "menu" ? "close" : "menu");
@@ -186,4 +186,6 @@ export default function App() {
       <Footer />
     </ThemeProvider>
   );
-}
+};
+
+export default App;

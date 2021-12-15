@@ -133,7 +133,7 @@ const Moon = styled.div`
   `};
 `;
 
-export default NotFound = () => {
+const NotFound = () => {
   return (
     <NotFound404>
       <Moon />
@@ -145,3 +145,5 @@ export default NotFound = () => {
     </NotFound404>
   );
 };
+
+export default NotFound;

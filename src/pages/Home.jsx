@@ -259,7 +259,7 @@ const ImgBg = styled.section`
   `};
 `;
 
-export default Home = () => {
+const Home = () => {
   const iconsChristmas = getIcons(IconsC);
   return (
     <HomeLayout>
@@ -293,3 +293,5 @@ export default Home = () => {
     </HomeLayout>
   );
 };
+
+export default Home;
