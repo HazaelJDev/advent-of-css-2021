@@ -15,6 +15,8 @@ import { ReactComponent as Twitter } from "./icons/twitter.svg";
 import { ReactComponent as YouTube } from "./icons/youtube.svg";
 import { ReactComponent as Instagram } from "./icons/instagram.svg";
 import { ReactComponent as Snapchat } from "./icons/snapchat.svg";
+import { ReactComponent as Check } from "./icons/check.svg";
+import { ReactComponent as Settings } from "./icons/settings.svg";
 
 const SocialMedia = {
   Facebook,
@@ -74,5 +76,7 @@ export const Icons = {
   Share,
   World,
   Link,
-  SocialMedia
+  SocialMedia,
+  Check,
+  Settings
 };

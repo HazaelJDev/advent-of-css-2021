@@ -85,6 +85,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     transition: all 1.5s ease-out;
   }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] { -moz-appearance:textfield; }
 
   h1,h2, h3, h4, h5, h6 {
     margin:0;
